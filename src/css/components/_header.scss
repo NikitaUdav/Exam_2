@@ -1,0 +1,10 @@
+.header {
+  height: 100vh;
+  position: relative;
+  &__scroll {
+    z-index: 10;
+    position: absolute;
+    right: 49%;
+    bottom: 40px;
+  }
+}

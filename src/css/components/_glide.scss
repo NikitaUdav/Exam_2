@@ -1,0 +1,63 @@
+.glide {
+  &__title {
+    z-index: 10;
+  }
+  &__subtitle {
+    z-index: 10;
+  }
+  &__slides {
+    &--header {
+      max-height: 100vh;
+    }
+    &--latest-news {
+    }
+  }
+  &__slide {
+    &--header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 100vh;
+    }
+    &--latest-news {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__bullets {
+    &--header {
+      display: flex;
+      flex-direction: column;
+      height: 160px;
+      right: 40px;
+      top: 40%;
+      justify-content: space-between;
+    }
+    &--latest-news {
+      width: 100%;
+      display: flex;
+      left: 50%;
+      bottom: 2em;
+      max-width: 200px;
+      justify-content: space-between;
+    }
+  }
+}
+.back-gradient {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(64, 63, 65);
+  background: linear-gradient(
+    225deg,
+    rgba(124, 95, 255, 1) 0%,
+    rgba(50, 140, 255, 1) 53%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  opacity: 0.95;
+}

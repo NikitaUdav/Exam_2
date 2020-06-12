@@ -1,0 +1,29 @@
+.card {
+  max-width: 390px;
+  &__wrapper {
+    position: relative;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__text {
+    margin-bottom: 70px;
+  }
+  &__autor-block {
+    display: flex;
+  }
+  &__autor-info {
+    display: flex;
+    flex-direction: column;
+  }
+  &__autor-name {
+    text-transform: uppercase;
+    max-width: 300px;
+  }
+  &__autor-photo {
+    margin-right: 30px;
+  }
+}

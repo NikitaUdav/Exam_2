@@ -1,0 +1,16 @@
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+@import "./core/vars";
+@import "./core/mixins";
+@import "./core/common";
+// основные секции
+@import "./components/glide";
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/logo";
+@import "./components/scroll";
+@import "./components/about-us";
+@import "./components/button";
+@import "./components/latest-news";
+@import "./components/card";
+@import "./components/gallery";

@@ -1,0 +1,19 @@
+.scroll {
+  width: 20px;
+  height: 10px;
+  fill: white;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    &:hover .scroll {
+      transition: all ease 0.5s;
+      transform: translateY(10px);
+    }
+  }
+}

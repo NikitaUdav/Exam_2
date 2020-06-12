@@ -1,0 +1,35 @@
+.about-us {
+  &__container {
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__color-block {
+    z-index: -1;
+    display: flex;
+    width: 585px;
+    height: 480px;
+    position: absolute;
+    left: 0;
+    background-color: $blue;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+}
+.devider {
+  height: 1px;
+  width: 100px;
+  background-color: black;
+}
+.article {
+  max-width: 470px;
+}

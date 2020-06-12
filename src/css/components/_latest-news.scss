@@ -1,0 +1,17 @@
+.latest-news {
+  padding-top: 30px;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  background-color: $blue;
+  &__devider {
+    margin: 0 auto;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
