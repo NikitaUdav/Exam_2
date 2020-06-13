@@ -8,22 +8,22 @@ $darker: #232323;
 $blue: #5474fd;
 $black: #000;
 $palaceholder: #999999;
-$sale: #fedc3f;
-$text: #b7bacd;
+$title: #2c4058;
+$text: #4b5562;
 $btn-buy: #13e28d;
 $darker-op: rgba(35, 35, 35, 0.9);
 // Fonts
-$base-font: "Poppins", sans-serif;
-$secondary-font: "Josefin Sans", sans-serif;
+$base-font: "Gothambold";
+$secondary-font: "GothamBook";
 
 @function calcRem($size) {
   $remSize: $size / 16px;
   @return #{$remSize}rem;
 }
 
-$H900: calcRem(86px);
+$H900: calcRem(80px);
 $H800: calcRem(60px);
-$H700: calcRem(48px);
+$H700: calcRem(44px);
 $H600: calcRem(32px);
 $H500: calcRem(24px);
 $H400: calcRem(22px);

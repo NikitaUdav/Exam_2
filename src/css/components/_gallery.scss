@@ -1,11 +1,50 @@
 .section-gallery {
+  padding-top: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  &__devider {
+    margin-bottom: 29px;
+  }
+  &__title {
+    margin-bottom: 90px;
+  }
+  &__button {
+    width: 190px;
+    margin-bottom: 140px;
+  }
 }
 .gallery {
+  width: 100%;
+  max-width: 1230px;
+  padding-left: 30px;
   display: flex;
+  flex-shrink: 1;
+  flex-grow: 1;
+  margin-bottom: 58px;
+  &__360 {
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+  }
 }
 .coll {
   display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 0;
+  margin-right: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  &--big {
+    padding-bottom: 36.5%;
+  }
+  &--small {
+    padding-bottom: 35.6%;
+  }
+}
+.row {
+  display: flex;
+  margin-bottom: 10px;
 }

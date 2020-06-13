@@ -1,23 +1,44 @@
 .navigation {
+  flex-direction: column;
+  @media screen and (min-width: $screen-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  padding: 0 50px 0 50px;
   margin: 0 auto;
   max-width: 1270px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 30px;
+  top: 53px;
   right: 0;
   left: 0;
   z-index: 1;
 }
 .nav_list {
+  padding-top: 30px;
+  margin-bottom: 60px;
+  @media screen and (min-width: $screen-tablet) {
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
   display: flex;
   align-items: center;
   flex: 1 1;
-  justify-content: space-around;
+  justify-content: center;
   &__item {
+    text-transform: uppercase;
+    color: $white;
+    font-size: $H100;
+    font-family: "GothamBook";
     &:hover .nav_list__circle {
       transition: all ease 0.5s;
       background-color: white;
+    }
+    &:not(:last-child) {
+      margin-right: 11%;
     }
   }
   &__circle {
@@ -33,18 +54,5 @@
     display: flex;
     align-items: center;
     margin-bottom: -1px;
-  }
-}
-.soc_list {
-  display: flex;
-  align-items: center;
-  &__item {
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    width: 30px;
-    height: 30px;
-    border: 1px solid white;
-    border-radius: 50%;
   }
 }

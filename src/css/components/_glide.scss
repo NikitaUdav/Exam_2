@@ -1,4 +1,10 @@
 .glide {
+  &__arrow {
+    display: none;
+    @media screen and (min-width: $screen-tablet) {
+      display: flex;
+    }
+  }
   &__title {
     z-index: 10;
   }
@@ -9,14 +15,12 @@
     &--header {
       max-height: 100vh;
     }
-    &--latest-news {
-    }
   }
   &__slide {
     &--header {
+      padding-top: 350px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
       position: relative;
       height: 100vh;
@@ -27,21 +31,24 @@
     }
   }
   &__bullets {
-    &--header {
-      display: flex;
-      flex-direction: column;
-      height: 160px;
-      right: 40px;
-      top: 40%;
-      justify-content: space-between;
-    }
-    &--latest-news {
-      width: 100%;
-      display: flex;
-      left: 50%;
-      bottom: 2em;
-      max-width: 200px;
-      justify-content: space-between;
+    display: none;
+    @media screen and (min-width: $screen-tablet) {
+      &--header {
+        display: flex;
+        flex-direction: column;
+        height: 160px;
+        right: 40px;
+        top: 40%;
+        justify-content: space-between;
+      }
+      &--latest-news {
+        width: 100%;
+        display: flex;
+        left: 50%;
+        bottom: 8.8em;
+        max-width: 215px;
+        justify-content: space-between;
+      }
     }
   }
 }

@@ -1,29 +1,55 @@
 .card {
-  max-width: 390px;
+  background-color: $white;
+  height: 516px;
+  max-width: 370px;
+  position: relative;
+  margin-bottom: 209px;
   &__wrapper {
+    width: 370px;
     position: relative;
-    height: 250px;
-    margin-bottom: 10px;
-  }
-  &__title {
-    text-transform: uppercase;
+    height: 241px;
     margin-bottom: 20px;
   }
+  &__content {
+    padding: 0px 20px 0px 20px;
+  }
+  &__title {
+    color: $title;
+    font-size: $H400;
+    text-transform: uppercase;
+    word-spacing: 0px;
+    line-height: 34px;
+    margin-bottom: 10px;
+  }
   &__text {
-    margin-bottom: 70px;
+    font-size: $H300;
+    overflow: auto;
+    max-height: 90px;
+    margin-bottom: 50px;
   }
   &__autor-block {
+    position: absolute;
+    bottom: 2px;
     display: flex;
+    margin-bottom: 26px;
   }
   &__autor-info {
     display: flex;
     flex-direction: column;
   }
   &__autor-name {
+    padding-top: 8px;
+    font-family: $secondary-font;
+    font-size: $H300;
     text-transform: uppercase;
     max-width: 300px;
+    margin-bottom: 6px;
   }
   &__autor-photo {
-    margin-right: 30px;
+    margin-right: 20px;
+  }
+  &__post-date {
+    font-size: $H100;
+    color: #55b7ff;
   }
 }

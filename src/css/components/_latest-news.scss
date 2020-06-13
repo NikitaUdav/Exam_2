@@ -1,17 +1,30 @@
 .latest-news {
-  padding-top: 30px;
+  padding-top: 140px;
   align-items: center;
   position: relative;
-  height: 100vh;
   background-color: $blue;
+  background: linear-gradient(
+    210deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(50, 140, 255, 1) 53%,
+    rgb(20, 33, 211) 100%
+  );
+  opacity: 0.95;
   &__devider {
+    background-color: $white;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
-  &__title {
+  &__header {
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+  }
+  &__title {
+    color: $white;
+    margin-bottom: 57px;
   }
 }

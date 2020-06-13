@@ -8,6 +8,27 @@
       href="./images/faviconk.ico"
       type="image/x-icon"
     />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0Y2CCZvSxWeG7FK6ZDzNxy2aHyLGtKOw&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <script>
+      (function (exports) {
+        "use strict";
+
+        function initMap() {
+          exports.map = new google.maps.Map(document.getElementById("map"), {
+            center: {
+              lat: -34.397,
+              lng: 150.644,
+            },
+            zoom: 8,
+          });
+        }
+
+        exports.initMap = initMap;
+      })((this.window = this.window || {}));
+    </script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>Monticello</title>
   </head>
@@ -18,23 +39,13 @@
     <!-- section -->
     //= templates/_latest-news.html
     <!-- section -->
-    <section class="section-gallery">
-      <span class="devider"></span>
-      <h2 class="title">gallery</h2>
-      <div class="gallery">
-        <div class="coll"><img src="./images/galery-main.png" alt="" /></div>
-        <div class="coll">
-          <div class="row">
-            <div class="coll"><img src="./images/galery1.png" alt="" /></div>
-            <div class="coll"><img src="./images/galery2.png" alt="" /></div>
-          </div>
-          <div class="row">
-            <div class="coll"><img src="./images/galery3.png" alt="" /></div>
-            <div class="coll"><img src="./images/galery4.png" alt="" /></div>
-          </div>
-        </div>
-      </div>
-    </section>
+    //= templates/_gallery.html
+    <!-- section -->
+    <div id="map"></div>
+    <!-- section -->
+    //= templates/_contact.html
+    <!-- section -->
+    //= templates/_footer.html
   </body>
   <svg style="display: none;">
     <symbol id="logo">

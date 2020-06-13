@@ -1,0 +1,83 @@
+.form {
+  z-index: 20;
+  top: 400px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 770px;
+  height: 750px;
+  @media screen and (min-width: $screen-tablet) {
+    height: 450px;
+  }
+  background-color: $white;
+  &__devider {
+    margin-bottom: 18px;
+  }
+  &__title {
+    margin-bottom: 32px;
+  }
+  &__main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1;
+    @media screen and (min-width: $screen-tablet) {
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px 0px 0px 85px;
+    }
+  }
+  &__inputs {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__info-list {
+    margin-bottom: 50px;
+    padding-top: 15px;
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 0;
+    }
+  }
+  &__info-item {
+    margin-right: 48px;
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
+  &__text {
+    font-size: $H300;
+  }
+  &__input {
+    font-family: $secondary-font;
+    height: 50px;
+    &::placeholder {
+      font-size: $H300;
+    }
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+    font-size: $H300;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $black;
+  }
+  &__button-wrapper {
+    padding-top: 50px;
+    @media screen and (min-width: $screen-tablet) {
+      padding-left: 171px;
+      padding-top: 8px;
+    }
+  }
+  &__button {
+    width: 100%;
+    margin-bottom: 40px;
+    @media screen and (min-width: $screen-tablet) {
+      max-width: 150px;
+      margin-bottom: 0;
+    }
+  }
+}

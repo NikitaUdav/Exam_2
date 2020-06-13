@@ -1,0 +1,27 @@
+.title {
+  color: $title;
+  text-transform: uppercase;
+  font-family: "Gothambold";
+  font-size: $H700;
+  &--header {
+    text-align: center;
+    color: $white;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    font-size: $H900;
+    font-family: "Gothambold";
+    margin-bottom: 20px;
+    @media screen and (min-width: $screen-tablet) {
+    }
+  }
+}
+.subtitle {
+  &--header {
+    text-align: center;
+    color: $white;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+    font-size: $H300;
+    font-family: "GothamBook";
+  }
+}

@@ -3,7 +3,9 @@
 @import "./core/vars";
 @import "./core/mixins";
 @import "./core/common";
+@import "./fonts.scss";
 // основные секции
+@import "./components/title";
 @import "./components/glide";
 @import "./components/header";
 @import "./components/navigation";
@@ -14,3 +16,7 @@
 @import "./components/latest-news";
 @import "./components/card";
 @import "./components/gallery";
+@import "./components/contact";
+@import "./components/form";
+@import "./components/footer";
+@import "./components/soc-list";

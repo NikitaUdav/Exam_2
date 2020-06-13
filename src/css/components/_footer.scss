@@ -1,0 +1,44 @@
+.footer {
+  padding-top: 555px;
+  @media screen and (min-width: $screen-tablet) {
+    padding-top: 255px;
+  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 0;
+  padding-bottom: 14%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background: linear-gradient(
+    225deg,
+    rgba(124, 95, 255, 1) 0%,
+    rgba(50, 140, 255, 1) 53%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  &__img {
+    opacity: 0.1;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    max-width: 768px;
+    height: 300px;
+    margin-bottom: 35px;
+  }
+  &__copy {
+    color: $white;
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+  }
+  &__text {
+    margin-right: 20px;
+  }
+}
