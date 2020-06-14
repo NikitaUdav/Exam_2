@@ -1,6 +1,7 @@
 .about-us {
+  width: 100%;
   position: relative;
-  margin-bottom: 137px;
+  margin-bottom: 140px;
   &__container {
     padding-top: 100px;
     position: relative;
@@ -13,6 +14,8 @@
     }
   }
   &__content {
+    padding-left: 15px;
+    padding-right: 15px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -21,6 +24,8 @@
     @media screen and (min-width: $screen-tablet) {
       flex-direction: row;
       justify-content: space-around;
+      align-items: flex-start;
+      padding-right: 0px;
     }
   }
   &__color-block {
@@ -37,6 +42,22 @@
     padding-top: 30px;
     margin-bottom: 160px;
   }
+  &__img-wrapper {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    height: 0;
+    padding-bottom: 65%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 0;
+      padding-bottom: 37.5%;
+
+      max-width: 630px;
+    }
+  }
 }
 .devider {
   height: 1px;
@@ -44,6 +65,7 @@
   background-color: black;
 }
 .article {
+  padding-top: 54px;
   @media screen and (min-width: $screen-tablet) {
     display: flex;
     flex-direction: column;
@@ -52,15 +74,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 55px;
   max-width: 480px;
   &__uper-title {
     text-transform: uppercase;
     font-family: $secondary-font;
     font-size: $H400;
+    margin-bottom: 2px;
   }
   &__title {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
   &__text {
     font-size: $H300;
@@ -70,6 +92,10 @@
     letter-spacing: -0.3px;
     word-spacing: -1px;
     margin-bottom: 31px;
+    text-align: center;
+    @media screen and (min-width: $screen-tablet) {
+      text-align: start;
+    }
   }
   &__button {
     margin-bottom: 58px;

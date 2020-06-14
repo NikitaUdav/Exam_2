@@ -3,14 +3,21 @@
   text-transform: uppercase;
   font-family: "Gothambold";
   font-size: $H700;
+  text-align: center;
+  @media screen and (min-width: $screen-tablet) {
+    text-align: start;
+  }
   &--header {
     text-align: center;
     color: $white;
     letter-spacing: 3px;
     word-spacing: 6px;
-    font-size: $H900;
+    font-size: $H800;
     font-family: "Gothambold";
     margin-bottom: 20px;
+    @media screen and (min-width: $screen-tablet) {
+      font-size: $H900;
+    }
   }
 }
 .subtitle {

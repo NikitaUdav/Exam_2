@@ -7,7 +7,9 @@
   border: 1px solid black;
   padding: 17px 40px 17px 40px;
   background-color: white;
+  min-width: 80%;
   @media screen and (min-width: $screen-tablet) {
+    min-width: inherit;
     &:hover {
       transition: all ease 0.4s;
       color: $white;

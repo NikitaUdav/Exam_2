@@ -18,10 +18,15 @@
   width: 100%;
   max-width: 1230px;
   padding-left: 30px;
+  padding-right: 30px;
   display: flex;
-  flex-shrink: 1;
-  flex-grow: 1;
-  margin-bottom: 58px;
+  flex-direction: column;
+  @media screen and (min-width: $screen-tablet) {
+    padding-left: 0px;
+    padding-right: 0px;
+    flex-direction: row;
+    margin-bottom: 58px;
+  }
   &__360 {
     display: none;
     position: absolute;
@@ -30,21 +35,37 @@
   }
 }
 .coll {
+  width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 0;
-  margin-right: 10px;
   flex-grow: 1;
   flex-shrink: 1;
+  margin-bottom: 30px;
   &--big {
-    padding-bottom: 36.5%;
+    padding-bottom: 60%;
+    @media screen and (min-width: $screen-tablet) {
+      padding-bottom: 36.5%;
+    }
   }
   &--small {
-    padding-bottom: 35.6%;
+    padding-bottom: 60%;
+    @media screen and (min-width: $screen-tablet) {
+      padding-bottom: 36%;
+    }
+  }
+  @media screen and (min-width: $screen-tablet) {
+    margin-bottom: 0px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 }
 .row {
   display: flex;
-  margin-bottom: 10px;
+  flex-direction: column;
+  @media screen and (min-width: $screen-tablet) {
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
 }

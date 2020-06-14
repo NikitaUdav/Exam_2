@@ -1,9 +1,5 @@
 .navigation {
   flex-direction: column;
-  @media screen and (min-width: $screen-tablet) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
   padding: 0 50px 0 50px;
   margin: 0 auto;
   max-width: 1270px;
@@ -15,38 +11,58 @@
   right: 0;
   left: 0;
   z-index: 1;
+  @media screen and (min-width: $screen-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .nav_list {
   padding-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  display: flex;
+  flex: 1 1;
   @media screen and (min-width: $screen-tablet) {
     flex-wrap: nowrap;
     margin-bottom: 0;
     padding-top: 0;
+    align-items: center;
+    justify-content: center;
   }
-  display: flex;
-  align-items: center;
-  flex: 1 1;
-  justify-content: center;
   &__item {
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
     text-transform: uppercase;
     color: $white;
     font-size: $H100;
     font-family: "GothamBook";
+    @media screen and (min-width: $screen-tablet) {
+      display: block;
+      flex: none;
+      &:not(:last-child) {
+        margin-bottom: 0px;
+        margin-right: 11%;
+        padding: 0px;
+      }
+    }
     &:hover .nav_list__circle {
       transition: all ease 0.5s;
       background-color: white;
     }
-    &:not(:last-child) {
-      margin-right: 11%;
-    }
   }
   &__circle {
+    display: none;
     width: 10px;
     height: 10px;
     border: 1px solid white;
     border-radius: 50%;
     margin-right: 10px;
+    @media screen and (min-width: $screen-tablet) {
+      display: block;
+    }
   }
   &__link {
     color: white;
