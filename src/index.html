@@ -8,27 +8,17 @@
       href="./images/faviconk.ico"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0Y2CCZvSxWeG7FK6ZDzNxy2aHyLGtKOw&callback=initMap&libraries=&v=weekly"
-      defer
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
     ></script>
-    <script>
-      (function (exports) {
-        "use strict";
-
-        function initMap() {
-          exports.map = new google.maps.Map(document.getElementById("map"), {
-            center: {
-              lat: -34.397,
-              lng: 150.644,
-            },
-            zoom: 8,
-          });
-        }
-
-        exports.initMap = initMap;
-      })((this.window = this.window || {}));
-    </script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>Monticello</title>
   </head>
@@ -41,7 +31,7 @@
     <!-- section -->
     //= templates/_gallery.html
     <!-- section -->
-    <div id="map"></div>
+
     <!-- section -->
     //= templates/_contact.html
     <!-- section -->

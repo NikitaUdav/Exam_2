@@ -51,7 +51,7 @@
   &--small {
     padding-bottom: 60%;
     @media screen and (min-width: $screen-tablet) {
-      padding-bottom: 36%;
+      padding-bottom: 36.5%;
     }
   }
   @media screen and (min-width: $screen-tablet) {
@@ -66,6 +66,8 @@
   flex-direction: column;
   @media screen and (min-width: $screen-tablet) {
     flex-direction: row;
-    margin-bottom: 10px;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }

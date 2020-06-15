@@ -11,7 +11,8 @@
   right: 0;
   left: 0;
   z-index: 1;
-  @media screen and (min-width: $screen-tablet) {
+
+  @media screen and (min-width: 1150px) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -22,7 +23,7 @@
   flex-wrap: wrap;
   display: flex;
   flex: 1 1;
-  @media screen and (min-width: $screen-tablet) {
+  @media screen and (min-width: 1150px) {
     flex-wrap: nowrap;
     margin-bottom: 0;
     padding-top: 0;
@@ -39,7 +40,7 @@
     color: $white;
     font-size: $H100;
     font-family: "GothamBook";
-    @media screen and (min-width: $screen-tablet) {
+    @media screen and (min-width: 1150px) {
       display: block;
       flex: none;
       &:not(:last-child) {
