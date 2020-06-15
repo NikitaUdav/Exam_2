@@ -35,6 +35,7 @@
   }
 }
 .coll {
+  transition: all ease 0.6s;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -42,16 +43,29 @@
   flex-grow: 1;
   flex-shrink: 1;
   margin-bottom: 30px;
+
   &--big {
+    z-index: 0;
     padding-bottom: 60%;
     @media screen and (min-width: $screen-tablet) {
       padding-bottom: 36.5%;
+      &:hover {
+        opacity: 0.6;
+      }
+      &:hover .gallery__360 {
+        display: block;
+      }
     }
   }
   &--small {
+    background-color: rgba(0, 0, 0, 1);
+
     padding-bottom: 60%;
     @media screen and (min-width: $screen-tablet) {
       padding-bottom: 36.5%;
+      &:hover {
+        opacity: 0.6;
+      }
     }
   }
   @media screen and (min-width: $screen-tablet) {
