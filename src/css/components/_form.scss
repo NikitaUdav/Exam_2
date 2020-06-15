@@ -41,7 +41,6 @@
     @media screen and (min-width: $screen-tablet) {
       flex-direction: row;
       align-items: flex-start;
-      padding: 0px 0px 0px 85px;
     }
   }
   &__inputs {
@@ -58,12 +57,16 @@
     }
   }
   &__info-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
     margin-right: 48px;
     &:not(:last-child) {
       margin-bottom: 38px;
     }
   }
   &__text {
+    padding-left: 10px;
     font-size: $H300;
   }
   &__input {
